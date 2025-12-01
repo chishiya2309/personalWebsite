@@ -26,9 +26,11 @@ public class ContactServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        // Set response type to JSON
-        response.setContentType("application/json");
-        response.setCharacterEncoding("UTF-8");
+        // Ensure request is read as UTF-8
+        request.setCharacterEncoding("UTF-8");
+        
+        // Set response type to JSON with UTF-8
+        response.setContentType("application/json; charset=UTF-8");
         
         PrintWriter out = response.getWriter();
         Gson gson = new Gson();

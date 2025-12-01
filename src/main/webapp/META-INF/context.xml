@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/personalWebsite">
+    <Resource name="jdbc/PostgresDB"
+                  auth="Container"
+                  type="javax.sql.DataSource"
+                  driverClassName="org.postgresql.Driver"
+                  url="jdbc:postgresql://pg-86c5d38-lequanghung-400.g.aivencloud.com:23856/personal_portfolio?ssl=require"
+                  username="avnadmin"
+                  password="AVNS_0WAsdbTz6Tp-HGUKKSc"
+                  maxTotal="20"
+                  maxIdle="10"
+                  maxWaitMillis="-1" />
+</Context>
+
